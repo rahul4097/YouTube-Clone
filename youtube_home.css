@@ -11,9 +11,15 @@
     padding: 9px 25px;
     font-weight: 100;
  }
+ h3{
+    font-size: 2rem;
+    padding: 9px 25px;
+    font-weight: 100;
+ }
 i{
     font-size: 2.5em;
     color: black;
+    cursor: pointer;
 }
 a{
     font-size: .9rem;
@@ -186,16 +192,45 @@ article{
     overflow-y: scroll;
 }
 /* javascript */
-/* .side-bar.close{
-    width: 70px;
+.side-bar.close{
+    width: 75px;
+    overflow: hidden;
 }
-.side-bar.close p,h4,hr{
-    opacity: 0;
-} */
+.side-bar.close .visible{
+    display: flex;
+}
+.side-bar.close p {
+    display: none;
+}
+.side-bar.close h3{
+    display: none;
+}
+.side-bar.close hr {
+    display: none;
+}
+.side-bar.close a{
+    display: none;
+}
+.content.zoom .video-thumbnail img{
+    width: 30vw;
+    height: 17vw;
+ }
+.content.zoom .option-elements{
+    width: 95vw;
+}
+.content.zoom .video-container{
+    width: 95.1vw;
+}
+.content.zoom .channel-name{
+    font-size: 2.1rem;
+}
+.content.zoom .total-views{
+    font-size: 1.6rem;
+}
 /* end */
 .side-bar a{
- text-decoration: none;
- color: white;
+    text-decoration: none;
+    color: white;
 }
 .sidebar-items{
     display: flex;
@@ -207,6 +242,7 @@ article{
     height: 42px;
     padding: 0px 24px;
     cursor: pointer;
+    text-decoration: none;
 }
 .side-bar-item:hover{
     background-color: #c7c3c3;
