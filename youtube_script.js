@@ -1,6 +1,10 @@
-// const toggle=document.getElementById('effect');
-// const bar=document.getElementsByClassName('side-bar');
 
-// toggle.addEventListener('click',()=>{
-//     bar.classList.toggle('close');
-// });
+const toggle_btn=document.getElementById('effect');
+const bar=document.querySelector('.side-bar');
+const content=document.querySelector('.content');
+
+
+toggle_btn.addEventListener('click',()=>{
+   bar.classList.toggle('close');
+    content.classList.toggle('zoom');
+});
